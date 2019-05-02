@@ -40,6 +40,7 @@ function searchToLatLong(request, response){
 
 // Constructor for location data
 function Location(query, response) {
+  
   this.search_query = query;
   this.formatted_query = response.body.results[0].formatted_address;
   this.latitude = response.body.results[0].geometry.location.lat;
